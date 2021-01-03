@@ -44,7 +44,8 @@
 2. 给myBlog创建虚拟环境，使用：`python -m venv env`
 3. 进入到虚拟环境，windows下：`.\\env\\Scripts\\activate`;
 4. 退出虚拟环境，windows下：`deactivate`；
-5. 使用VSCode打开myBlog，执行：`python manage.py startapp articles`
+5. 使用VSCode打开myBlog，执行：`python manage.py runserver`
+6. 创建超级管理员账号：python manage.py createsuperuser
 
 
 
@@ -52,7 +53,11 @@
 
 ## 四、创建articles的models
 
+1.创建model
 
+2.数据库同步
+
+3.在admin.py中注册model
 
 
 
