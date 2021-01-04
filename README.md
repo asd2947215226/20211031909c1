@@ -44,7 +44,7 @@
 2. 给myBlog创建虚拟环境，使用：`python -m venv env`
 3. 进入到虚拟环境，windows下：`.\\env\\Scripts\\activate`;
 4. 退出虚拟环境，windows下：`deactivate`；
-5. 使用VSCode打开myBlog，执行：`python manage.py runserver`
+5. 使用VSCode打开myBlog，执行：python manage.py runserver
 6. 创建超级管理员账号：python manage.py createsuperuser
 
 
@@ -61,7 +61,19 @@
 
 
 
+## 五、业务逻辑
 
+1.文章列表页，分页  
+
+2.文章详情页，评论
+
+3.全局搜索功能  Q
+
+4.最新文章，最新评论的排行
+
+5.按照分类，标签的一个聚类操作 
+
+6.联系我页面，发送邮件
 
 
 
