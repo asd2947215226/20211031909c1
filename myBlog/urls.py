@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> edfc092... 加上了页面并完成了一部分功能
 """myBlog URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -18,4 +22,16 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
+=======
+=======
+
+from django.contrib import admin
+from django.urls import path,include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('article/',include("articles.urls"))
+>>>>>>> 564e3f7... 加入了页面以及完成了部分功能
+>>>>>>> edfc092... 加上了页面并完成了一部分功能
 ]

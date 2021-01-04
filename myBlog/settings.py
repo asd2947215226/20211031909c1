@@ -37,9 +37,21 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'users',
     'articles',
     'cousers'
+=======
+<<<<<<< HEAD
+    'users',
+    'articles',
+    'cousers'
+=======
+    'users.apps.UsersConfig',
+    'articles.apps.ArticlesConfig',
+    'cousers.apps.CousersConfig'
+>>>>>>> 564e3f7... 加入了页面以及完成了部分功能
+>>>>>>> edfc092... 加上了页面并完成了一部分功能
 ]
 
 MIDDLEWARE = [
@@ -57,7 +69,15 @@ ROOT_URLCONF = 'myBlog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [],
+=======
+<<<<<<< HEAD
+        'DIRS': [],
+=======
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
+>>>>>>> 564e3f7... 加入了页面以及完成了部分功能
+>>>>>>> edfc092... 加上了页面并完成了一部分功能
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,3 +141,12 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,'static'),
+)
+>>>>>>> 564e3f7... 加入了页面以及完成了部分功能
+>>>>>>> edfc092... 加上了页面并完成了一部分功能
