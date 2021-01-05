@@ -46,36 +46,46 @@
 4. 退出虚拟环境，windows下：`deactivate`；
 5. 使用VSCode打开myBlog，执行：python manage.py runserver
 6. 创建超级管理员账号：python manage.py createsuperuser
+7. 在settings.py中进行注册每个app  INSTALLED_APPS  
+8. 创建models.py填写数据进行迁移数据库 写源编程类和str函数
 
+## 四、创建文章的模型
 
-
-
-
-## 四、创建articles的models
-
-1.创建model
-
-2.数据库同步
-
-3.在admin.py中注册model
-
-
+1.创建model及逆行数据库迁移
+2.在admin.py注册每个app
+3.对于文章管理员是有文章数据库中的所有相关字段
+4.admin.site.register(Articles,ArticlesAdmin) 进行在admin管理员页面网址注册文章以及文章管理员 
 
 ## 五、业务逻辑
 
-1.文章列表页，分页  
+文章列表页 分页          django
+文章详情页  评论         评论库 第三方库
+详情列表页/文章搜索/     q对象或的对象标题摘要获得信息
+最新文章最新评论排行榜    时间
+按照分类标签的聚类操作    分类标签进行搜索
+联系我页面，发送邮件      发送邮件的行为和操作
 
-2.文章详情页，评论
+##  六、实现模板复用
 
-3.全局搜索功能  Q
+如何加载静态页面  网上图片不需要解析  加标签  
+在settings.py文件中注册静态页面和templates模板 
+创建公共模板进行继承extends 实现模板复用  
+将公共内容base.html/aside.html写入common文件夹中实现模板复用减少冗余代码的写入
+注册静态内容 {% load static %}  css/js
 
-4.最新文章，最新评论的排行
+## 七、注册路由实现页面跳转
 
-5.按照分类，标签的一个聚类操作 
+在主博客页面的urls.py文件中include引入每个app的urls配置
+MVC模式  models.py 数据库字段内容 进行数据展示和增删改查 views.py  
 
-6.联系我页面，发送邮件
+## 八、将所有app归拢到apps文件夹下
+import sys
+sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
 
 
+## 九、评论和集成markdownfy插件
+django-contrib-comments
+django-markdownfy    
 
 
 
